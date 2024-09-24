@@ -1,0 +1,3 @@
+[submodule "5.so_long/minilibx"]
+	path = 5.so_long/minilibx
+	url = https://github.com/42Paris/minilibx-linux.git
