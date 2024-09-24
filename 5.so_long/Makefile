@@ -41,7 +41,7 @@ CFLAGS = -Wall -Wextra -Werror -I/minilibx -Imlx_linux -g3
 all: ${NAME}
 
 ${NAME}: ${OBJECTS} LIBFT mlx
-	${CC} ${CFLAGS} ${OBJECTS} ${LIBFT} -Lminilibx -lmlx_Linux -L/usr/lib -Imlx_linux -lXext -lX11 -lm -lz -o ${NAME}
+	${CC} ${CFLAGS} ${OBJECTS} ${LIBFT} -Lminilibx -lmlx_Linux -Imlx_linux -lXext -lX11 -lm -o ${NAME}
 
 $(SRC_DIR)/%.o: $(SRC_DIR)/%.c
 	$(CC) $(CFLAGS) -I ${INCLUDE_DIR} -I ${LIBFT_DIR} -c $< -o $@
