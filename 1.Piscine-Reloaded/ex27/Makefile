@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: qupollet <quentinpollet27@gmail.com>       +#+  +:+       +#+         #
+#    By: NekoTintin <tintin361official@gmail.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/15 14:26:48 by qupollet          #+#    #+#              #
-#    Updated: 2024/05/17 14:07:01 by qupollet         ###   ########.fr        #
+#    Updated: 2024/09/24 16:53:29 by NekoTintin       ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 

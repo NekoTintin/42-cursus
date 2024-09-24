@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qupollet <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: NekoTintin <tintin361official@gmail.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 17:58:46 by qupollet          #+#    #+#             */
-/*   Updated: 2024/05/16 12:33:27 by qupollet         ###   ########.fr       */
+/*   Updated: 2024/09/24 16:51:58 by NekoTintin       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

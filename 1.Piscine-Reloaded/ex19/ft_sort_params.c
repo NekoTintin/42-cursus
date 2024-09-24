@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_sort_params.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qupollet <quentinpollet27@gmail.com>       +#+  +:+       +#+        */
+/*   By: NekoTintin <tintin361official@gmail.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 17:46:20 by qupollet          #+#    #+#             */
-/*   Updated: 2024/05/16 18:06:24 by qupollet         ###   ########.fr       */
+/*   Updated: 2024/09/24 16:52:38 by NekoTintin       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

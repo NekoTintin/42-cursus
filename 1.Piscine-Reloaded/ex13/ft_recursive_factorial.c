@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qupollet <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: NekoTintin <tintin361official@gmail.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 18:04:35 by qupollet          #+#    #+#             */
-/*   Updated: 2024/05/14 10:26:39 by qupollet         ###   ########.fr       */
+/*   Updated: 2024/09/24 16:52:04 by NekoTintin       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
