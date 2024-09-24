@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   player_movment.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qupollet <qupollet@student.42.fr>          +#+  +:+       +#+        */
+/*   By: NekoTintin <tintin361official@gmail.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 15:37:55 by qupollet          #+#    #+#             */
-/*   Updated: 2024/09/19 12:27:55 by qupollet         ###   ########.fr       */
+/*   Updated: 2024/09/24 17:06:39 by NekoTintin       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

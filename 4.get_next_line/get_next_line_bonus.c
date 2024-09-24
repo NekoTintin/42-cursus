@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qupollet <qupollet@student.42.fr>          +#+  +:+       +#+        */
+/*   By: NekoTintin <tintin361official@gmail.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/24 16:34:31 by qupollet          #+#    #+#             */
-/*   Updated: 2024/07/16 16:35:47 by qupollet         ###   ########.fr       */
+/*   Updated: 2024/09/24 16:57:24 by NekoTintin       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line_bonus.h"
-#include <fcntl.h>
-#include <stdio.h>
 
 char	*ft_read_from_file(int fd, char *stash, char *buf)
 {

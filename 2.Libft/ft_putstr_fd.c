@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qupollet <quentinpollet27@gmail.com>       +#+  +:+       +#+        */
+/*   By: NekoTintin <tintin361official@gmail.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 16:58:39 by qupollet          #+#    #+#             */
-/*   Updated: 2024/05/31 10:55:23 by qupollet         ###   ########.fr       */
+/*   Updated: 2024/09/24 17:02:43 by NekoTintin       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
+int	ft_putstr_fd(char *s, int fd)
 {
 	int	index;
 
@@ -20,4 +20,5 @@ void	ft_putstr_fd(char *s, int fd)
 	if (s)
 		while (s[++index])
 			ft_putchar_fd(s[index], fd);
+	return (index);
 }

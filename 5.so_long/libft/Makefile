@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: qupollet <qupollet@student.42.fr>          +#+  +:+       +#+         #
+#    By: NekoTintin <tintin361official@gmail.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/21 10:29:40 by qupollet          #+#    #+#              #
-#    Updated: 2024/09/19 12:17:49 by qupollet         ###   ########.fr        #
+#    Updated: 2024/09/24 17:05:28 by NekoTintin       ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,6 +51,15 @@ TO_COMPILE = ft_atoi.c \
 			get_next_line.c \
 			ft_utils.c \
 			ft_printf.c \
+			ft_lstnew_bonus.c \
+			ft_lstadd_front_bonus.c \
+			ft_lstsize_bonus.c \
+			ft_lstadd_back_bonus.c \
+			ft_lstdelone_bonus.c \
+			ft_lstclear_bonus.c \
+			ft_lstiter_bonus.c \
+			ft_lstmap_bonus.c \
+			ft_lstlast_bonus.c
 
 SRCS = ${TO_COMPILE}
 OBJECTS = ${SRCS:.c=.o}
