@@ -1,9 +1,9 @@
 # 42-Cursus
 
-[Français](#fr)
-[English](#en)
+[Français](#Français)
+[English](#English)
 
-## [Français](#fr)
+## Français
 
 Voici tout ce que j'ai fais pendant mon cursus à 42.
 
@@ -44,7 +44,7 @@ Voici tout ce que j'ai fais pendant mon cursus à 42.
 
 -----------------
 
-## [English](#en)
+## English
 
 This is everything I've completed during my 42 curriculum.
 
