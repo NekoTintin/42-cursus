@@ -38,7 +38,7 @@ Voici tout ce que j'ai fais pendant mon cursus à 42.
    - **Dossier :** [Accéder au projet push_swap](https://github.com/NekoTintin/42-cursus/tree/main/6.push_swap)
 
 ## 7. **pipex**
-   - **Description :** Développement d’un programme simulant le comportement du pipe (`|`) en ligne de commande, permettant de connecter plusieurs processus entre eux. Le but étant de reproduire la commande ```bash < infile cmd1 | cmd2 > outfile```
+   - **Description :** Développement d’un programme simulant le comportement du pipe (`|`) en ligne de commande, permettant de connecter plusieurs processus entre eux. Le but étant de reproduire la commande ```< infile cmd1 | cmd2 > outfile```
    - **Résultat :** 100/100
    - **Dossier :** [Accéder au projet pipex](https://github.com/NekoTintin/42-cursus/tree/main/7.pipex)
 
@@ -79,6 +79,6 @@ This is everything I've completed during my 42 curriculum.
    - **Folder:** [Access the push_swap project](https://github.com/NekoTintin/42-cursus/tree/main/6.push_swap)
 
 ## 7. **pipex**
-   - **Description:** Development of a program simulating the behavior of the pipe (`|`) in the command line, allowing the connection of multiple processes. The goal is to reproduce the command ```bash < infile cmd1 | cmd2 > outfile```.
+   - **Description:** Development of a program simulating the behavior of the pipe (`|`) in the command line, allowing the connection of multiple processes. The goal is to reproduce the command ```< infile cmd1 | cmd2 > outfile```.
    - **Result:** 100/100
    - **Folder:** [Access the pipex project](https://github.com/NekoTintin/42-cursus/tree/main/7.pipex)
