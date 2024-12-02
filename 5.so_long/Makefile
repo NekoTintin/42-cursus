@@ -5,17 +5,18 @@
 #                                                     +:+ +:+         +:+      #
 #    By: qupollet <qupollet@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/09/02 18:40:37 by qupollet          #+#    #+#              #
-#    Updated: 2024/09/20 16:23:30 by qupollet         ###   ########.fr        #
+#    Created: 2024/12/02 16:15:56 by qupollet          #+#    #+#              #
+#    Updated: 2024/12/02 16:31:41 by qupollet         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = so_long
 
 SRC_DIR = src
-LIBFT_DIR = libft
+OBJ_DIR = objs
 INCLUDE_DIR = include
 MLX_DIR = minilibx
+LIBFT_DIR = libft
 
 SRC =	map/create_map.c \
 		map/map.c \
@@ -31,35 +32,62 @@ SRC =	map/create_map.c \
 		utils/free_things.c \
 
 SRCS = ${addprefix ${SRC_DIR}/, ${SRC}}
-OBJECTS = ${SRCS:.c=.o}
+OBJECTS = ${addprefix ${OBJ_DIR}/, ${SRC:.c=.o}}
 
 LIBFT = ${LIBFT_DIR}/libft.a
 
-CC = cc
-CFLAGS = -Wall -Wextra -Werror -I/minilibx -Imlx_linux -g3
+CC = @cc
+CFLAGS = -Wall -Wextra -Werror -g3 -I/minilibx -Imlx_linux
+
+# Colours
+RED = \033[0;91m
+GREEN = \033[0;33m
+BLUE = \033[1;34m
+YELLOW1 = \033[1;33m
+NC = \033[0m 
 
 all: ${NAME}
+	@echo "${GREEN}✅ Build compiled !"
 
-${NAME}: ${OBJECTS} LIBFT mlx
+${LIBFT}:
+	@echo "${BLUE}🛠️  Compiling LIBFT ${NC}"
+	@make -C ${LIBFT_DIR}
+
+${MLX}:
+	@echo "${BLUE}🛠️  Compiling Minilibx ${NC}"
+	@make -C ${MLX_DIR}
+
+# Compilation de l'exécutable
+${NAME}: ${LIBFT} ${MLX} ${OBJECTS}
 	${CC} ${CFLAGS} ${OBJECTS} ${LIBFT} -Lminilibx -lmlx_Linux -Imlx_linux -lXext -lX11 -lm -o ${NAME}
 
-$(SRC_DIR)/%.o: $(SRC_DIR)/%.c
-	$(CC) $(CFLAGS) -I ${INCLUDE_DIR} -I ${LIBFT_DIR} -c $< -o $@
+# Règle pour compiler les fichiers objets dans le dossier objs
+${OBJ_DIR}/%.o: ${SRC_DIR}/%.c | ${OBJ_DIR}
+	@echo "${BLUE}🛠️  Compiling $< into $@...${NC}"
+	${CC} ${CFLAGS} -I ${INCLUDE_DIR} -I ${LIBFT_DIR} -c $< -o $@
 
-LIBFT: 
-	make -C $(LIBFT_DIR)
+# Création du répertoire objs si non existant
+${OBJ_DIR}:
+	@echo "${YELLOW}📂 Creating directories ${OBJ_DIR}...\n${NC}"
+	@mkdir -p ${OBJ_DIR}
+	@mkdir -p ${OBJ_DIR}/game
+	@mkdir -p ${OBJ_DIR}/utils
+	@mkdir -p ${OBJ_DIR}/map
 
-mlx:
-	make -C ${MLX_DIR}
-
+# Nettoyage des fichiers objets
 clean:
-	rm -f ${OBJECTS}
-	make clean -C libft
+	@echo "${RED}🧹 Cleaning object directory...${NC}"
+	@make clean -C libft
+	@rm -rf ${OBJ_DIR}
 
+# Nettoyage complet
 fclean: clean
-	rm -f ${NAME}
-	make fclean -C libft
+	@echo "${RED}🧹 Cleaning executable...${NC}"
+	@make fclean -C libft
+	@rm -f ${NAME}
+	@rm -rf $ {OBJ_DIR}
 
+# Rebuild complet
 re: fclean all
 
 .PHONY: all clean fclean re
