@@ -6,11 +6,11 @@
 /*   By: NekoTintin <tintin361official@gmail.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/12 16:21:03 by qupollet          #+#    #+#             */
-/*   Updated: 2024/09/24 16:56:48 by NekoTintin       ###   ########.fr       */
+/*   Updated: 2024/12/03 00:50:45 by NekoTintin       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../includes/ft_printf.h"
 
 static char	*ft_char_set(char state)
 {

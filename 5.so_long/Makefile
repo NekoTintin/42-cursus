@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: qupollet <qupollet@student.42.fr>          +#+  +:+       +#+         #
+#    By: NekoTintin <tintin361official@gmail.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/02 16:15:56 by qupollet          #+#    #+#              #
-#    Updated: 2024/12/02 16:31:41 by qupollet         ###   ########.fr        #
+#    Updated: 2024/12/03 00:54:17 by NekoTintin       ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,13 +37,13 @@ OBJECTS = ${addprefix ${OBJ_DIR}/, ${SRC:.c=.o}}
 LIBFT = ${LIBFT_DIR}/libft.a
 
 CC = @cc
-CFLAGS = -Wall -Wextra -Werror -g3 -I/minilibx -Imlx_linux
+CFLAGS = -Wall -Wextra -Werror -I/minilibx -Imlx_linux
 
 # Colours
 RED = \033[0;91m
 GREEN = \033[0;33m
 BLUE = \033[1;34m
-YELLOW1 = \033[1;33m
+YELLOW = \033[1;33m
 NC = \033[0m 
 
 all: ${NAME}
@@ -78,12 +78,14 @@ ${OBJ_DIR}:
 clean:
 	@echo "${RED}🧹 Cleaning object directory...${NC}"
 	@make clean -C libft
+	@echo "${RED}🧹 Cleaning LIBFT...${NC}"
 	@rm -rf ${OBJ_DIR}
 
 # Nettoyage complet
 fclean: clean
 	@echo "${RED}🧹 Cleaning executable...${NC}"
 	@make fclean -C libft
+	@echo "${YELLOW}📂 Entering LIBFT directories...${NC}"
 	@rm -f ${NAME}
 	@rm -rf $ {OBJ_DIR}
 

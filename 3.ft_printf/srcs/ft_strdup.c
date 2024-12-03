@@ -6,11 +6,11 @@
 /*   By: NekoTintin <tintin361official@gmail.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 10:53:19 by qupollet          #+#    #+#             */
-/*   Updated: 2024/09/24 16:56:45 by NekoTintin       ###   ########.fr       */
+/*   Updated: 2024/12/03 00:50:37 by NekoTintin       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/ft_printf.h"
 
 char	*ft_strdup(const char *s)
 {

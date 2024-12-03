@@ -6,11 +6,11 @@
 /*   By: NekoTintin <tintin361official@gmail.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 16:49:31 by qupollet          #+#    #+#             */
-/*   Updated: 2024/09/24 16:56:41 by NekoTintin       ###   ########.fr       */
+/*   Updated: 2024/12/03 00:50:29 by NekoTintin       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/ft_printf.h"
 
 int	ft_putchar_fd(char c, int fd)
 {

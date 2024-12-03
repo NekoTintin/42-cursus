@@ -12,9 +12,11 @@
 
 NAME = libft.a
 
-INCLUDES = libft.h
+OBJ_DIR = objs
 
-TO_COMPILE = ft_atoi.c \
+HEADER = libft.h
+
+SRC =		ft_atoi.c \
 			ft_itoa.c \
 			ft_bzero.c \
 			ft_calloc.c \
@@ -61,32 +63,48 @@ TO_COMPILE = ft_atoi.c \
 			ft_lstmap_bonus.c \
 			ft_lstlast_bonus.c
 
-SRCS = ${TO_COMPILE}
-OBJECTS = ${SRCS:.c=.o}
+SRCS = ${SRC}
+OBJECTS = ${addprefix ${OBJ_DIR}/, ${SRCS:.c=.o}}
 
-CC = clang
-
+CC = @cc
 CFLAGS = -Wall -Wextra -Werror
 
+# Colours
+RED = \033[0;91m
+GREEN = \033[0;33m
+BLUE = \033[1;34m
+YELLOW = \033[1;33m
+NC = \033[0m 
+
 all: ${NAME}
+	@echo "${GREEN}✅ Build compiled !"
 
-%.o: %.c
-	${CC} ${CFLAGS} -I ${INCLUDES} -c $< -o $@
-
+# Compilation de l'exécutable
 ${NAME}: ${OBJECTS}
-	ar -rcs ${NAME} ${OBJECTS}
-	ranlib ${NAME}
+	@ar -rcs ${NAME} ${OBJECTS}
+	@ranlib ${NAME}
 
-so:
-	${CC} -nostartfiles -fPIC ${CFLAGS} ${SRCS}
-	gcc -nostartfiles -shared -o libft.so ${OBJECTS}
-	
+# Règle pour compiler les fichiers objets dans le dossier objs
+${OBJ_DIR}/%.o: %.c | ${OBJ_DIR}
+	@echo "${BLUE}   🛠️  Compiling $< into $@...${NC}"
+	${CC} ${CFLAGS} -c $< -o $@
+
+# Création du répertoire objs si non existant
+${OBJ_DIR}:
+	@echo "${YELLOW}📂 Creating directory ${OBJ_DIR}...${NC}"
+	@mkdir -p ${OBJ_DIR}
+
+# Nettoyage des fichiers objets
 clean:
-	rm -f ${OBJECTS}
+	@echo "${RED}🧹 Cleaning object directory...${NC}"
+	@rm -rf ${OBJ_DIR}
 
+# Nettoyage complet
 fclean: clean
-	rm -f ${NAME}
+	@echo "${RED}🧹 Cleaning executable...${NC}"
+	@rm -f ${NAME}
 
+# Rebuild complet
 re: fclean all
 
 .PHONY: all clean fclean re
