@@ -77,7 +77,7 @@ YELLOW = \033[1;33m
 NC = \033[0m 
 
 all: ${NAME}
-	@echo "${GREEN}✅ Build compiled !"
+	@echo "${GREEN}✅ LIBFT compiled !"
 
 # Compilation de l'exécutable
 ${NAME}: ${OBJECTS}
