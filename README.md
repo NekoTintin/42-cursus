@@ -43,10 +43,14 @@ Voici tout ce que j'ai fais pendant mon cursus à 42.
    - **Dossier :** [Accéder au projet pipex](https://github.com/NekoTintin/42-cursus/tree/main/7.pipex)
 
 ## 8. **minishell**
-- **Description :** Création d’un shell minimaliste reprenant les fonctionnalités de base d’un shell Unix, avec gestion des builtins, des redirections, pipes, variables d’environnement, et signaux.
-- **Résultat :** 101/100 (validé à 101%)
-- **Dossier :** [Accéder au projet minishell](https://github.com/NekoTintin/minishell42/tree/76246321655ace3b1b907f57145287554482a195)
+   - **Description :** Création d’un shell minimaliste reprenant les fonctionnalités de base d’un shell Unix, avec gestion des builtins, des redirections, pipes, variables d’environnement, et signaux.
+   - **Résultat :** 101/100 (validé à 101%)
+   - **Dossier :** [Accéder au projet minishell](https://github.com/NekoTintin/minishell42/tree/76246321655ace3b1b907f57145287554482a195)
 
+## 9. **philo**
+   - **Description :** Implémentation du problème des philosophes en C, avec gestion fine des threads, mutex et timing critique.
+   - **Resultat :** 100/100
+   - **Dossier :** [Accéder au projet philo](https://github.com/NekoTintin/42-cursus/tree/main/8.philo)
 
 -----------------
 
@@ -90,6 +94,11 @@ This is everything I've completed during my 42 curriculum.
    - **Folder:** [Access the pipex project](https://github.com/NekoTintin/42-cursus/tree/main/7.pipex)
 
 ## 8. **minishell**
-- **Description:** Creation of a minimalist shell replicating the basic features of a Unix shell, with builtins, redirections, pipes, environment variables, and signal handling.
-- **Result:** 101/100 (validated with full marks)
-- **Folder:** [Access the minishell project](https://github.com/NekoTintin/minishell42/tree/76246321655ace3b1b907f57145287554482a195)
+   - **Description:** Creation of a minimalist shell replicating the basic features of a Unix shell, with builtins, redirections, pipes, environment variables, and signal handling.
+   - **Result:** 101/100 (validated with full marks)
+   - **Folder:** [Access the minishell project](https://github.com/NekoTintin/minishell42/tree/76246321655ace3b1b907f57145287554482a195)
+
+## 9. **philo**
+   - **Description :** Implementation of the Dining Philosophers problem in C, with precise handling of threads, mutexes, and timing.
+   - **Resultat :** 100/100
+   - **Dossier :** [Access the philo projet](https://github.com/NekoTintin/42-cursus/tree/main/8.philo)
