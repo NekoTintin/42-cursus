@@ -50,7 +50,7 @@ Voici tout ce que j'ai fais pendant mon cursus à 42.
 ## 9. **philo**
    - **Description :** Implémentation du problème des philosophes en C, avec gestion fine des threads, mutex et timing critique.
    - **Resultat :** 100/100
-   - **Dossier :** [Accéder au projet philo](https://github.com/NekoTintin/42-cursus/tree/main/8.philo)
+   - **Dossier :** [Accéder au projet philo](https://github.com/NekoTintin/42-cursus/tree/main/9.philo)
 
 -----------------
 
@@ -101,4 +101,4 @@ This is everything I've completed during my 42 curriculum.
 ## 9. **philo**
    - **Description :** Implementation of the Dining Philosophers problem in C, with precise handling of threads, mutexes, and timing.
    - **Resultat :** 100/100
-   - **Dossier :** [Access the philo projet](https://github.com/NekoTintin/42-cursus/tree/main/8.philo)
+   - **Dossier :** [Access the philo projet](https://github.com/NekoTintin/42-cursus/tree/main/9.philo)
